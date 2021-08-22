@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="main">
     
     <nav>
         <ul>
@@ -8,14 +8,7 @@
             <li>Iniciar sesión</li>
         </ul>
     </nav>
-    <section>
-        <ul>
-            <li>Congresos</li>
-            <li>Cursos</li>
-            <li>Materiales</li>
-            <li>Contiunua tus estudios</li>
-        </ul>
-    </section>
+
     <aside>
       <blockquote>Primera noticia</blockquote>
       <blockquote>Segunda noticia</blockquote>
