@@ -2,7 +2,6 @@
   <v-app>
     <v-main>
       <Header/>
-      <Buscador/>
       <Main/>
       <Footer/>
     </v-main>
@@ -13,7 +12,6 @@
 import Main from './components/Main';
 import Header from './header/footer/Header.vue';
 import Footer from './header/footer/Footer.vue';
-import Buscador from './header/footer/Buscador.vue';
 
 export default {
   name: 'App',
@@ -22,7 +20,7 @@ export default {
     Main,
     Header,
     Footer,
-    Buscador,
+
   },
 
   data: () => ({
