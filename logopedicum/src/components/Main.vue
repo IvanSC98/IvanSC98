@@ -1,13 +1,5 @@
 <template>
   <div class="main">
-    
-    <nav>
-        <ul>
-            <li>¿Quiénes somos?</li>
-            <li>Únete</li>
-            <li>Iniciar sesión</li>
-        </ul>
-    </nav>
 
     <aside>
       <blockquote>Primera noticia</blockquote>
