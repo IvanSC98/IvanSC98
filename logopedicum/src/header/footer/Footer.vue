@@ -10,7 +10,7 @@
         tile
       >
         <v-card-title class="teal">
-          <strong class="subheading">Contactános</strong>
+          <strong class="subheading">Contáctanos</strong>
 
           <v-spacer></v-spacer>
 

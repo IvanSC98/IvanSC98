@@ -1,15 +1,14 @@
 <template>
   <v-app>
-    <v-main>
-      <Header/>
-      <Main/>
-      <Footer/>
+    <v-main>  
+      <Header class="header"/>
+      <router-view/>
+      <Footer class="footer"/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Main from './components/Main';
 import Header from './header/footer/Header.vue';
 import Footer from './header/footer/Footer.vue';
 
@@ -17,7 +16,6 @@ export default {
   name: 'App',
 
   components: {
-    Main,
     Header,
     Footer,
 
@@ -28,3 +26,16 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+
+.header{
+  padding-bottom: 10px;
+}
+
+.footer{
+  padding-top: 10px;
+}
+  
+</style>
+

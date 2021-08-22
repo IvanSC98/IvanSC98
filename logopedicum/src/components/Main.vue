@@ -1,91 +1,195 @@
 <template>
   <div class="main">
-    <v-card
-      class="mx-auto"
-      max-width="300"
-    >
 
-      <v-toolbar
-        color="teal"
-        dark
-      >
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <div class="linea1">
+      <v-card
+      class="card">
 
-        <v-toolbar-title>Noticias</v-toolbar-title>
+        <v-img
+          src="https://raw.githubusercontent.com/ijklim/simon-game/gh-pages/assets/img/bg--game-pad.jpg"
+          height="150px"
+        />         
 
-        <v-spacer></v-spacer>
+        <v-card-title>
+          <h2>Congresos</h2>
+        </v-card-title>
 
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-      </v-toolbar>
+        <v-card-text>
+            Ver todos los congresos disponibles
+        </v-card-text>
+      
+        
+        <v-card-actions>
+          <v-btn color=success @click="goCongresos">IR YA</v-btn>
+        </v-card-actions>
+        
+      </v-card>
 
-      <v-container fluid>
-        <v-row dense>
-          <v-col
-            v-for="card in cards"
-            :key="card.title"
-            :cols="card.flex"
-          >
-            <v-card>
-              <v-img
-                :src="card.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="200px"
-              >
-                <v-card-title v-text="card.title"></v-card-title>
-              </v-img>
+      <v-card
+      class="card">
 
-              <v-card-actions>
-                <v-spacer></v-spacer>
+        <v-img
+          src="https://raw.githubusercontent.com/ijklim/simon-game/gh-pages/assets/img/bg--game-pad.jpg"
+          height="150px"
+        />      
 
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
+        <v-card-title>
+          <h2>Cursos</h2>
+        </v-card-title>
 
-                <v-btn icon>
-                  <v-icon>mdi-bookmark</v-icon>
-                </v-btn>
+        <v-card-text>
+            Ver todos los cursos disponibles
+        </v-card-text>
+      
+        
+        <v-card-actions>
+          <v-btn color=success @click="goCursos">IR YA</v-btn>
+        </v-card-actions>
+        
+      </v-card>
 
-                <v-btn icon>
-                  <v-icon>mdi-share-variant</v-icon>
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-card>
+    </div>
+
+    <div class="linea2">
+      <v-card
+      class="card">
+
+        <v-img
+          src="https://raw.githubusercontent.com/ijklim/simon-game/gh-pages/assets/img/bg--game-pad.jpg"
+          height="150px"
+        />                 
+
+        <v-card-title>
+          <h2>Materiales</h2>
+        </v-card-title>
+
+        <v-card-text>
+            Ver todos los materiales disponibles
+        </v-card-text>
+      
+        
+        <v-card-actions>
+          <v-btn color=success @click="goMateriales">IR YA</v-btn>
+        </v-card-actions>
+        
+      </v-card>
+
+      <v-card
+      class="card">
+
+        <v-img
+          src="https://raw.githubusercontent.com/ijklim/simon-game/gh-pages/assets/img/bg--game-pad.jpg"
+          height="150px"
+        />         
+
+        <v-card-title>
+          <h2>Noticias</h2>
+        </v-card-title>
+
+        <v-card-text>
+            Ver todos las noticias disponibles
+        </v-card-text>
+      
+        
+        <v-card-actions>
+          <v-btn color=success @click="goNoticias">IR YA</v-btn>
+        </v-card-actions>
+        
+      </v-card>
+    
+    </div>
+
+
+    <div class="linea3">
+      <v-card
+      class="card">
+
+        <v-img
+          src="https://raw.githubusercontent.com/ijklim/simon-game/gh-pages/assets/img/bg--game-pad.jpg"
+          height="150px"
+        />       
+
+        <v-card-title>
+          <h2>Continua tus estudios</h2>
+        </v-card-title>
+
+        <v-card-text>
+            Ver todos los estudios disponibles
+        </v-card-text>
+      
+        
+        <v-card-actions>
+          <v-btn color=success @click="goEstudios">IR YA</v-btn>
+        </v-card-actions>
+        
+      </v-card>
+    
+    </div>
   </div>
 </template>
 <script>
 export default {
-    data: () => ({
-      cards: [
-        { title: 'Noticia 1', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
-        { title: 'Noticia 2', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 12 },
-        { title: 'Noticia 3', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 12 },
-      ],
-    }),
-}
+  name: 'Main',
+  components: {
+    
+  },
+  data() {
+    return {
+  
+      }
+    },
+    methods: {
+      goCongresos() {
+        if (this.$route.name !== 'Congresos') {
+          this.$router.push({ name: 'Congresos' })
+        }
+      },
+      goCursos() {
+        if (this.$route.name !== 'Cursos') {
+          this.$router.push({ name: 'Cursos' })
+        }
+      },
+      goMateriales() {
+        if (this.$route.name !== 'Materiales') {
+          this.$router.push({ name: 'Materiales' })
+        }
+      },
+      goNoticias() {
+        if (this.$route.name !== 'Noticias') {
+          this.$router.push({ name: 'Noticias' })
+        }
+      },
+      goEstudios() {
+        if (this.$route.name !== 'Estudios') {
+          this.$router.push({ name: 'Estudios' })
+        }
+      },
+    }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+
+.linea1{
+  padding: 10px;
+  padding-left: 10%;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.linea2{
+  padding: 10px;
+  padding-left: 10%;
 }
-li {
+
+.linea3{
+  padding: 10px;
+  padding-left: 35%;
+}
+
+.card{
   display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  margin: 1em;
+  width: 40%;
 }
 
 </style>

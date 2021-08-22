@@ -10,11 +10,16 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-fixed-header": "^3.2.15",
+    "vue-i18n": "^8.25.0",
+    "vue-router": "^3.5.2",
+    "vue-store": "^0.3.1-moved",
     "vuetify": "^2.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.13",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
