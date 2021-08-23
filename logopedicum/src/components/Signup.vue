@@ -1,7 +1,10 @@
 <template>
   <div class="signup">
 
-    <p class="title1">Únete</p>
+
+    <v-card class="contenido">
+
+      <p class="title1">Únete</p>
 
     <v-form
       ref="form"
@@ -77,6 +80,7 @@
         :rules="passwordRules"
         label="Contraseña"
         required
+        type="password"
       ></v-text-field>
 
       <v-text-field
@@ -84,6 +88,7 @@
         :rules="password1Rules"
         label="Repetir Contraseña"
         required
+        type="password"
       ></v-text-field>
 
       <v-checkbox
@@ -102,6 +107,8 @@
         Registrar
       </v-btn>
     </v-form>
+
+    </v-card>
   </div>
     
 </template>
@@ -150,6 +157,13 @@ export default {
   padding-right: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.contenido{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .title1{
