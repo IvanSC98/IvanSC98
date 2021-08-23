@@ -28,16 +28,27 @@
             :cols="card.flex"
           >
             <v-card>
-              <v-img
-                :src="card.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="200px"
-              >
-                <v-card-title v-text="card.title"></v-card-title>
-              </v-img>
+              <div class="noticia">
+
+                <v-img
+                  class="imagen"
+                  :src="card.src"
+                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                  height="100px"
+                >
+                  <a><v-card-title class="titulo" v-text="card.title"></v-card-title></a>
+                </v-img>
+
+                <v-card>
+                  <p class="descripcion">Hola</p>
+                </v-card>
+
+
+              </div>
 
               <v-card-actions>
+                <a>Saber más...</a>
+
                 <v-spacer></v-spacer>
 
                 <v-btn icon>
@@ -98,4 +109,17 @@ a {
   position: relative;
   left: 45%;
 }
+
+.imagen{
+  margin-top: 10px;
+}
+
+.titulo{
+  color: aliceblue;
+}
+
+.descripcion{
+  padding-left: 10px;
+}
+
 </style>
