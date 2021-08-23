@@ -5,7 +5,7 @@
 
     <div class="contenedor">
       
-        <div class="calendario">
+     <div class="calendario">
         <v-sheet
           tile
           class="d-flex"
@@ -15,7 +15,7 @@
             class="ma-2"
             @click="$refs.calendar.prev()"
           >
-            <v-icon>mdi-chevron-left</v-icon>
+            <v-icon>mdi-ch   evron-left</v-icon>
           </v-btn>
           <v-select
             v-model="type"
