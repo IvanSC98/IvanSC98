@@ -39,10 +39,11 @@ export default {
   name: 'Footer',
     data: () => ({
       icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
+        'mdi-email',
         'mdi-instagram',
+        'mdi-twitter',
+        'mdi-facebook',
+        'mdi-linkedin',
       ],
     }),
   }
