@@ -100,4 +100,7 @@ export default {
   font-size: 80px !important;;
 }
 
+.v-btn{
+  margin: 5px;
+}
 </style>
