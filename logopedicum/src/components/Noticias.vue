@@ -10,9 +10,8 @@
         color="teal"
         dark
       >
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-        <v-toolbar-title>Noticias</v-toolbar-title>
+        <v-toolbar-title>Últimas noticias</v-toolbar-title>
 
         <v-spacer></v-spacer>
 

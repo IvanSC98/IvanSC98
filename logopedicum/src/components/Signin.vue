@@ -1,9 +1,9 @@
 <template>
   <div class="signin">
-
+    <p class="title1">Iniciar Sesión</p>
     <v-card class="contenido">
       <v-toolbar dark color="primary">
-        <v-toolbar-title>Iniciar Sesión</v-toolbar-title>
+        <v-toolbar-title>Login</v-toolbar-title>
       </v-toolbar>
       <v-card-text>
         <v-form>
@@ -45,10 +45,17 @@ export default {
 <style scoped>
 
 .contenido{
-  margin: 10%;
+  margin: 5%;
+  margin-bottom: 10%;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-
+.title1{
+  font-family: fantasy !important;
+  font-size: 70px !important;
+  color: blue;
+  position: relative;
+  left: 41%;
+}
 </style>
