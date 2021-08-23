@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <p class="title1">Noticias</p>
     <v-card
       class="mx-auto"
       max-width="90vw"
@@ -91,5 +92,11 @@ li {
 a {
   color: #42b983;
 }
-
+.title1{
+  font-family: fantasy !important;
+  font-size: 70px !important;
+  color: blue;
+  position: relative;
+  left: 45%;
+}
 </style>
