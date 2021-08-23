@@ -6,6 +6,9 @@ import Congresos from "../components/Congresos.vue";
 import Cursos from "../components/Cursos.vue";
 import Materiales from "../components/Materiales.vue";
 import Estudios from "../components/Estudios.vue";
+import Info from "../components/Info.vue";
+import Signin from "../components/Signin.vue";
+import Signup from "../components/Signup.vue";
 
 Vue.use(VueRouter);
 
@@ -39,6 +42,21 @@ const routes = [
     path: '/estudios',
     name: 'Estudios',
     component: Estudios
+  },
+  {
+    path: '/info',
+    name: 'Info',
+    component: Info
+  },
+  {
+    path: '/signup',
+    name: 'Signup',
+    component: Signup
+  },
+  {
+    path: '/signin',
+    name: 'Signin',
+    component: Signin
   },
   {
     path: '*',

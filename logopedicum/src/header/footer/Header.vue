@@ -16,18 +16,18 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn color="primary">
+        <v-btn color="primary" @click="goInfo">
           ¿Quiénes somos?
           <v-icon>mdi-information-outline</v-icon>
         </v-btn>
         
 
-        <v-btn color="primary">
+        <v-btn color="primary" @click="goSignup">
           Únete
           <v-icon>mdi-account-group</v-icon>
         </v-btn>
 
-        <v-btn color="primary">
+        <v-btn color="primary" @click="goSignin">
           Iniciar sesión
           <v-icon>mdi-account-circle</v-icon>
         </v-btn>
@@ -84,6 +84,21 @@ export default {
       goEstudios() {
         if (this.$route.name !== 'Estudios') {
           this.$router.push({ name: 'Estudios' })
+        }
+      },
+       goInfo() {
+        if (this.$route.name !== 'Info') {
+          this.$router.push({ name: 'Info' })
+        }
+      },
+       goSignup() {
+        if (this.$route.name !== 'Signup') {
+          this.$router.push({ name: 'Signup' })
+        }
+      },
+       goSignin() {
+        if (this.$route.name !== 'Signin') {
+          this.$router.push({ name: 'Signin' })
         }
       },
     }
