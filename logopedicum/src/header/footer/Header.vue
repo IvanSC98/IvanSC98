@@ -32,7 +32,6 @@
           <v-icon>mdi-account-circle</v-icon>
         </v-btn>
       
-
         <template v-slot:extension>
           <v-tabs align-with-title>
             <v-tab @click="goPrincipal">Principal</v-tab>
