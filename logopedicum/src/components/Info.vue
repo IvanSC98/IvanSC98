@@ -18,18 +18,17 @@
     <p class="title2">Sobre nosotros</p>
       <div class="description2">
         <div class="card">
-          <img src="../assets/ivan.png" style="width:100%">
+          <img class="imagen" src="../assets/ivan.png" style="width:100%">
           <h1>Iván Sierra</h1>
           <p class="title">Logopeda</p>
           <p>Universidad de Valladolid</p>
           <p><button>Contacto</button></p>
         </div>
         <div class="card">
-          <img src="https://media-exp1.licdn.com/dms/image/C4D03AQG0B3bt25C5Ug/profile-displayphoto-shrink_200_200/0/1616316252772?e=1632355200&v=beta&t=TPXbbyFnbst1zNIaSLam9MAU49tEv2nTF3mIjLgP3NA" style="width:100%">
+          <img class="imagen" src="https://media-exp1.licdn.com/dms/image/C4D03AQG0B3bt25C5Ug/profile-displayphoto-shrink_200_200/0/1616316252772?e=1632355200&v=beta&t=TPXbbyFnbst1zNIaSLam9MAU49tEv2nTF3mIjLgP3NA" style="width:100%">
           <h1>Gonzalo Herreros</h1>
-          <p class="title">Ingeniero informático</p>
+          <p class="title">Ingeniero Informático</p>
           <p>Universidad de Valladolid</p>
-          <p>Máster en Ciberseguridad</p>
           <p><button>Contacto</button></p>
         </div>
       </div>
@@ -67,6 +66,8 @@ export default {
 }
 .description{
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .description2{
   position: relative;
@@ -77,6 +78,8 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 20%;
   margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
   text-align: center;
   display: inline-block;
   padding: 10px;
@@ -109,5 +112,9 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
+}
+
+.imagen{
+  height: 350px;
 }
 </style>
