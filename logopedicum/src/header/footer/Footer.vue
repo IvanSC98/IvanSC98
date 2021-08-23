@@ -28,7 +28,7 @@
         </v-card-title>
 
         <v-card-text class="py-2 white--text text-center">
-          {{ new Date().getFullYear() }} — <strong>Logopedicum</strong>
+          {{ new Date().getFullYear() }} — <strong>GIHS Logopedic</strong>
         </v-card-text>
       </v-card>
     </v-footer>

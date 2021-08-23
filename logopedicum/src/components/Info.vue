@@ -1,8 +1,9 @@
 <template>
   <div class="info1">
+    <v-card class="card1">
     <p class="title1">¿Quiénes somos?</p>
     <div class="description">
-      <p>Logopedicum es una plataforma digital destinada a la creación de una comunidad tanto de profesionales como familias en la cual 
+      <p>GIHS Logopedic es una plataforma digital destinada a la creación de una comunidad tanto de profesionales como familias en la cual 
       compartir conocimientos e inquietudes acerca de las distitnas patologias que se presentan a lo largo de toda una vida, desde 
       el desarrollo en los más pequeños, hasta los problemas que se presentan a raíz de posibles accidentes o simplemente 
       con el transcurso de los años.</p>
@@ -14,6 +15,7 @@
       <p>Además queremos que todo el mundo pueda trabajar de manera óptima con los materiales necesarios para ello, por eso contamos
       con una tienda en la cual encontrarás un gran repertorio de materiales e instrumental a un buen precio.</p>
     </div>
+    </v-card>
     <div class="info2">
     <p class="title2">Sobre nosotros</p>
       <div class="description2">
@@ -53,14 +55,14 @@ export default {
 .title1{
   font-family: fantasy !important;
   font-size: 70px !important;
-  color: blue;
+  color: black;
   position: relative;
   left: 34%;
 }
 .title2{
   font-family: fantasy !important;
   font-size: 70px !important;
-  color: blue;
+  color: black;
   position: relative;
   left: 37%;
 }
@@ -116,5 +118,12 @@ button:hover, a:hover {
 
 .imagen{
   height: 350px;
+}
+
+.card1{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 </style>

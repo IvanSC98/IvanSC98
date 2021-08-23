@@ -12,7 +12,7 @@
           ></v-img>
         </template>
 
-        <p class="title1" style="color:white;">Logopedicum</p>
+        <p class="title1" style="color:white;">GIHS Logopedic</p>
 
         <v-spacer></v-spacer>
 

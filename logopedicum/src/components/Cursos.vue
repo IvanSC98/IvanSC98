@@ -1,6 +1,73 @@
 <template>
   <div class="cursos">
     <p class="title1">Cursos</p>
+    <v-card
+      class="mx-auto"
+      max-width="90vw"
+    >
+
+      <v-toolbar
+        color="teal"
+        dark
+      >
+
+        <v-toolbar-title>Últimos cursos</v-toolbar-title>
+
+        <v-spacer></v-spacer>
+
+        <v-btn icon>
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+      </v-toolbar>
+
+      <v-container fluid>
+        <v-row dense>
+          <v-col
+            v-for="card in cards"
+            :key="card.title"
+            :cols="card.flex"
+          >
+            <v-card>
+              <div class="noticia">
+
+                <v-img
+                  class="imagen"
+                  :src="card.src"
+                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                  height="100px"
+                >
+                  <a><v-card-title class="titulo" v-text="card.title"></v-card-title></a>
+                </v-img>
+
+                <v-card>
+                  <p class="descripcion">Hola</p>
+                </v-card>
+
+
+              </div>
+
+              <v-card-actions>
+                <a>Saber más...</a>
+
+                <v-spacer></v-spacer>
+
+                <v-btn icon>
+                  <v-icon>mdi-heart</v-icon>
+                </v-btn>
+
+                <v-btn icon>
+                  <v-icon>mdi-bookmark</v-icon>
+                </v-btn>
+
+                <v-btn icon>
+                  <v-icon>mdi-share-variant</v-icon>
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-card>
   </div>
     
 </template>
@@ -10,8 +77,12 @@ export default {
   components: {
     
   },
-  data: () => ({
-      
+ data: () => ({
+      cards: [
+        { title: 'Curso 1', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
+        { title: 'Curso 2', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 12 },
+        { title: 'Curso 3', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 12 },
+      ],
     }),
 }
 </script>
@@ -22,8 +93,35 @@ export default {
 .title1{
   font-family: fantasy !important;
   font-size: 70px !important;
-  color: blue;
+  color: black;
   position: relative;
   left: 45%;
+}
+
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+
+.imagen{
+  margin-top: 10px;
+}
+
+.titulo{
+  color: aliceblue;
+}
+
+.descripcion{
+  padding-left: 10px;
 }
 </style>

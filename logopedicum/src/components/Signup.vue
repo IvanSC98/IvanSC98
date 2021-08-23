@@ -11,7 +11,7 @@
       v-model="valid"
       lazy-validation
       class="formulario"
-    >
+    > 
       <v-text-field
         v-model="name"
         :rules="nameRules"
@@ -169,7 +169,7 @@ export default {
 .title1{
   font-family: fantasy !important;
   font-size: 70px !important;
-  color: blue;
+  color: black;
   position: absolute;
   left: 50%;
 }

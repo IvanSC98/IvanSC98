@@ -21,7 +21,7 @@ export default {
 .title1{
   font-family: fantasy !important;
   font-size: 70px !important;
-  color: blue;
+  color: black;
   position: relative;
   left: 35%;
 }
