@@ -110,8 +110,9 @@ export default {
 .title1{
   padding:10px !important;;
   margin-left: 25px !important;;
-  font-family: fantasy !important;;
-  font-size: 80px !important;;
+  margin-top: 15px;
+  font-family: helvetica !important;;
+  font-size: 60px !important;;
 }
 
 .v-btn{

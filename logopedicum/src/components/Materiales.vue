@@ -8,27 +8,25 @@
       <p>Set de 3 pesas labiales</p>
       <p><button>Añadir al carrito</button></p>
     </div>
+    <div class="filtros">
       <v-card class="filtros"
         max-width="400"
       >
         <v-toolbar
           flat
-          color="deep-purple accent-4"
+          color="teal"
           dark
         >
-          <v-btn icon>
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
-          <v-toolbar-title>Filter results</v-toolbar-title>
+          <v-toolbar-title>Filtros</v-toolbar-title>
         </v-toolbar>
 
         <v-card-text>
           <h2 class="text-h6 mb-2">
-            Choose amenities
+            Categorias
           </h2>
 
           <v-chip-group
-            v-model="amenities"
+            v-model="categorias"
             column
             multiple
           >
@@ -36,48 +34,48 @@
               filter
               outlined
             >
-              Elevator
+              Disfagia
             </v-chip>
             <v-chip
               filter
               outlined
             >
-              Washer / Dryer
+              Terapia miofuncional
             </v-chip>
             <v-chip
               filter
               outlined
             >
-              Fireplace
+              Libros
             </v-chip>
             <v-chip
               filter
               outlined
             >
-              Wheelchair access
+              Respiración
             </v-chip>
             <v-chip
               filter
               outlined
             >
-              Dogs ok
+              Voz
             </v-chip>
             <v-chip
               filter
               outlined
             >
-              Cats ok
+              Deglución
             </v-chip>
           </v-chip-group>
         </v-card-text>
 
         <v-card-text>
           <h2 class="text-h6 mb-2">
-            Choose neighborhoods
+            Productos
           </h2>
 
           <v-chip-group
-            v-model="neighborhoods"
+            v-model="productos"
             column
             multiple
           >
@@ -119,7 +117,8 @@
             </v-chip>
           </v-chip-group>
         </v-card-text>
-    </v-card>
+      </v-card>
+    </div>
   </div>
 </template>
 
@@ -146,7 +145,7 @@
   max-width: 200px;
   margin: auto;
   text-align: center;
-  font-family: arial;
+  font-family: helvetica;
 }
 
 .price {
@@ -170,6 +169,9 @@
   opacity: 0.7;
 }
 .filtros{
-
+  position: absolute;
+  top: 89px;
+  bottom: 55px;
+  width: 300px;
 }
 </style>

@@ -23,6 +23,6 @@ export default {
   font-size: 70px !important;
   color: black;
   position: relative;
-  left: 35%;
+  left: 30%;
 }
 </style>

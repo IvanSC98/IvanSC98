@@ -107,7 +107,7 @@ a {
   font-size: 70px !important;
   color: black;
   position: relative;
-  left: 45%;
+  left: 40%;
 }
 
 .imagen{

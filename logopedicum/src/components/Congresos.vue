@@ -207,8 +207,7 @@ export default {
   font-size: 70px !important;
   color: black;
   position: relative;
-  left: 42%;
-  right: 42%;
+  left: 39%;
   width: 16%;
 }
 
