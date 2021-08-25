@@ -57,14 +57,16 @@ export default {
   font-size: 70px !important;
   color: black;
   position: relative;
-  left: 34%;
+  text-align: center;
+  vertical-align: middle;
 }
 .title2{
   font-family: fantasy !important;
   font-size: 70px !important;
   color: black;
   position: relative;
-  left: 37%;
+  text-align: center;
+  vertical-align: middle;
 }
 .description{
     text-align: center;

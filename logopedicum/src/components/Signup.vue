@@ -171,7 +171,7 @@ export default {
   font-size: 70px !important;
   color: black;
   position: absolute;
-  left: 50%;
+  left: 45%;
 }
 
 </style>

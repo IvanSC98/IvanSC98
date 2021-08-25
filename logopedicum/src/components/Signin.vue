@@ -56,6 +56,7 @@ export default {
   font-size: 70px !important;
   color: black;
   position: relative;
-  left: 40%;
+  text-align: center;
+  vertical-align: middle;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <p class="title1">"Los límites de mi lenguaje son los límites de mi mundo"</p>
 
     <div class="linea1">
       <v-card
@@ -190,6 +191,15 @@ export default {
   display: inline-block;
   margin: 1em;
   width: 40%;
+}
+
+.title1{
+  font-family: fantasy !important;
+  font-size: 70px !important;
+  color: black;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
 }
 
 </style>

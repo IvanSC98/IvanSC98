@@ -1,16 +1,9 @@
 <template>
   <div class="materiales">
     <p class="title1">Materiales</p>
-    <div class="card">
-      <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
-      <h1>Pesas labiales</h1>
-      <p class="price">19.99€</p>
-      <p>Set de 3 pesas labiales</p>
-      <p><button>Añadir al carrito</button></p>
-    </div>
+    <div class="contenedor">
     <div class="filtros">
       <v-card class="filtros"
-        max-width="400"
       >
         <v-toolbar
           flat
@@ -19,7 +12,6 @@
         >
           <v-toolbar-title>Filtros</v-toolbar-title>
         </v-toolbar>
-
         <v-card-text>
           <h2 class="text-h6 mb-2">
             Categorias
@@ -119,6 +111,69 @@
         </v-card-text>
       </v-card>
     </div>
+    <div class="materiales1">
+      <div class="fila">
+      <div class="card">
+        <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <h1>Pesas labiales</h1>
+        <p class="price">19.99€</p>
+        <p>Set de 3 pesas labiales</p>
+        <p><button>Añadir al carrito</button></p>
+      </div>
+      <div class="card">
+        <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <h1>Pesas labiales</h1>
+        <p class="price">19.99€</p>
+        <p>Set de 3 pesas labiales</p>
+        <p><button>Añadir al carrito</button></p>
+      </div>
+      <div class="card">
+        <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <h1>Pesas labiales</h1>
+        <p class="price">19.99€</p>
+        <p>Set de 3 pesas labiales</p>
+        <p><button>Añadir al carrito</button></p>
+      </div>
+      <div class="card">
+        <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <h1>Pesas labiales</h1>
+        <p class="price">19.99€</p>
+        <p>Set de 3 pesas labiales</p>
+        <p><button>Añadir al carrito</button></p>
+      </div>
+      </div>
+      <div class="fila1">
+      <div class="card">
+        <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <h1>Pesas labiales</h1>
+        <p class="price">19.99€</p>
+        <p>Set de 3 pesas labiales</p>
+        <p><button>Añadir al carrito</button></p>
+      </div>
+      <div class="card">
+        <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <h1>Pesas labiales</h1>
+        <p class="price">19.99€</p>
+        <p>Set de 3 pesas labiales</p>
+        <p><button>Añadir al carrito</button></p>
+      </div>
+      <div class="card">
+        <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <h1>Pesas labiales</h1>
+        <p class="price">19.99€</p>
+        <p>Set de 3 pesas labiales</p>
+        <p><button>Añadir al carrito</button></p>
+      </div>
+      <div class="card">
+        <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <h1>Pesas labiales</h1>
+        <p class="price">19.99€</p>
+        <p>Set de 3 pesas labiales</p>
+        <p><button>Añadir al carrito</button></p>
+      </div>
+      </div>
+    </div>
+    </div>
   </div>
 </template>
 
@@ -138,14 +193,16 @@
   font-size: 70px !important;
   color: black;
   position: relative;
-  left: 40%;
+  text-align: center;
+  vertical-align: middle;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 200px;
-  margin: auto;
   text-align: center;
   font-family: helvetica;
+  display: inline-block;
+  margin: 2%;
 }
 
 .price {
@@ -168,10 +225,30 @@
 .card button:hover {
   opacity: 0.7;
 }
+.contenedor{
+  display: flex;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
 .filtros{
-  position: absolute;
-  top: 89px;
-  bottom: 55px;
-  width: 300px;
+  display: inline-block;
+  width: 60%;
+}
+
+.materiales1{
+  display: inline-block;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.fila{
+  display: flex;
+  margin-right: 5%;
+}
+
+.fila1{
+  display: flex;
+  margin-right: 5%;
 }
 </style>
