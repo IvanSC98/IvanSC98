@@ -39,7 +39,7 @@
             <v-tab @click="goCursos">Cursos</v-tab>
             <v-tab @click="goMateriales">Materiales</v-tab>
             <v-tab @click="goNoticias">Noticias</v-tab>
-            <v-tab @click="goEstudios">Continua tus estudios</v-tab>
+            <v-tab @click="goEstudios">Comunidad</v-tab>
           </v-tabs>
         </template>
       </v-toolbar>

@@ -1,6 +1,6 @@
 <template>
   <div class="estudios">
-    <p class="title1">Continua tus estudios</p>
+    <p class="title1">Comunidad</p>
 
   <div>
     <v-card
