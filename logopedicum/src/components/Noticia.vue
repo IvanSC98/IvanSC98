@@ -1,8 +1,8 @@
 <template>
-  <div class="congresos">
+  <div class="noticia">
     
     <p class="title1">Nombre de la noticia</p>
-
+    
     
     
   </div>
