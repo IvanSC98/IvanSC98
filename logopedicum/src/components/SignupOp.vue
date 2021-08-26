@@ -112,7 +112,7 @@ export default {
 
 .card{
     display: inline-block;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 .card1{
