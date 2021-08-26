@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+  <VueScrollProgress></VueScrollProgress>
       <v-toolbar
         dark
         prominent
@@ -117,5 +118,15 @@ export default {
 
 .v-btn{
   margin: 5px;
+}
+/* play with some lines below */
+#progress-container-el {
+  /* background */
+  background-color: #f4f4f4 !important;
+}
+
+#progress-el {
+  /* progress bar */
+  background-color: red !important;
 }
 </style>
