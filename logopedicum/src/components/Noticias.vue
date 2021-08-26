@@ -36,7 +36,7 @@
                   gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                   height="100px"
                 >
-                  <a><v-card-title class="titulo" v-text="card.title"></v-card-title></a>
+                  <a @click="goNoticia"><v-card-title class="titulo" v-text="card.title"></v-card-title></a>
                 </v-img>
 
                 <v-card>
@@ -47,7 +47,7 @@
               </div>
 
               <v-card-actions>
-                <a>Saber más...</a>
+                <a @click="goNoticia">Saber más...</a>
 
                 <v-spacer></v-spacer>
 
@@ -82,7 +82,14 @@ export default {
         { title: 'Noticia 2', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 12 },
         { title: 'Noticia 3', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 12 },
       ],
-    }),
+      }),
+      methods: {
+        goNoticia() {
+          if (this.$route.name !== 'Noticia') {
+            this.$router.push({ name: 'Noticia' })
+          }
+        },
+    }
 }
 </script>
 

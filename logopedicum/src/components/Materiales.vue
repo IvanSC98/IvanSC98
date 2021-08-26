@@ -180,6 +180,8 @@
 <script>
   export default {
     data: () => ({
+      productos:[],
+      categorias:[],
       amenities: [1, 4],
       neighborhoods: [1],
     }),

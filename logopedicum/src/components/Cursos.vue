@@ -48,7 +48,6 @@
             :weekdays="weekday"
             :type="type"
             :events="events"
-            :event-overlap-mode="mode"
             :event-overlap-threshold="30"
             :event-color="getEventColor"
             @change="getEvents"
@@ -89,7 +88,7 @@
                   gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                   height="100px"
                 >
-                  <a><v-card-title class="titulo" v-text="card.title"></v-card-title></a>
+                  <a @click="goCurso"><v-card-title class="titulo" v-text="card.title"></v-card-title></a>
                 </v-img>
 
                 <v-card>
@@ -100,7 +99,7 @@
               </div>
 
               <v-card-actions>
-                <a>Saber más...</a>
+                <a @click="goCurso">Saber más...</a>
 
                 <v-spacer></v-spacer>
 
@@ -183,6 +182,11 @@ export default {
       },
       rnd (a, b) {
         return Math.floor((b - a + 1) * Math.random()) + a
+      },
+      goCurso() {
+        if (this.$route.name !== 'Curso') {
+          this.$router.push({ name: 'Curso' })
+        }
       },
     },
 }
