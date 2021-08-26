@@ -9,6 +9,7 @@ import Estudios from "../components/Estudios.vue";
 import Info from "../components/Info.vue";
 import Signin from "../components/Signin.vue";
 import Signup from "../components/Signup.vue";
+import SignupOp from "../components/SignupOp.vue";
 import Noticia from "../components/Noticia.vue";
 import Congreso from "../components/Congreso.vue";
 import Curso from "../components/Curso.vue";
@@ -55,6 +56,11 @@ const routes = [
     path: '/signup',
     name: 'Signup',
     component: Signup
+  },
+  {
+    path: '/signupop',
+    name: 'SignupOp',
+    component: SignupOp
   },
   {
     path: '/signin',

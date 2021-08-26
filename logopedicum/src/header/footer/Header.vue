@@ -91,8 +91,8 @@ export default {
         }
       },
        goSignup() {
-        if (this.$route.name !== 'Signup') {
-          this.$router.push({ name: 'Signup' })
+        if (this.$route.name !== 'SignupOp') {
+          this.$router.push({ name: 'SignupOp' })
         }
       },
        goSignin() {
