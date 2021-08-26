@@ -106,17 +106,18 @@ export default {
 .contenido{
     display: flex;
     margin: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .card{
     display: inline-block;
-    margin-left: 25%;
     margin-right: 10%;
 }
 
 .card1{
     display: inline-block;
-    margin-right: 25%;
+
 }
 
 </style>
