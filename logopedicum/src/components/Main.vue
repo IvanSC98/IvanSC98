@@ -21,7 +21,7 @@
       
         
         <v-card-actions>
-          <v-btn color=success @click="goCongresos">IR YA</v-btn>
+          <v-btn class="but1" color=success @click="goCongresos">IR YA</v-btn>
         </v-card-actions>
         
       </v-card>
@@ -173,18 +173,18 @@ export default {
 <style scoped>
 
 .linea1{
-  padding: 10px;
-  padding-left: 10%;
+  position: relative;
+  text-align: center;
 }
 
 .linea2{
-  padding: 10px;
-  padding-left: 10%;
+  position: relative;
+  text-align: center;
 }
 
 .linea3{
-  padding: 10px;
-  padding-left: 35%;
+  position: relative;
+  text-align: center;
 }
 
 .card{

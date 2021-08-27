@@ -69,25 +69,23 @@ export default {
   vertical-align: middle;
 }
 .description{
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
 }
 .description2{
   position: relative;
-  left: 30%;
-  right: 30%;
+  text-align: center;
+  vertical-align: middle;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block; 
   width: 20%;
   margin: auto;
   margin-right: 10px;
   margin-left: 10px;
   text-align: center;
-  display: inline-block;
-  padding: 10px;
-
 }
 
 .title {

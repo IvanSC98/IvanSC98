@@ -49,6 +49,7 @@ export default {
   margin-bottom: 10%;
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 3%;
 }
 
 .title1{

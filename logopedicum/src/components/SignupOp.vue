@@ -1,70 +1,70 @@
 <template>
   <div class="signup">
-
-
     <p class="title1">Únete</p>
 
     <div class="contenido">
-         <v-card
-            class="card"
-            max-width="344"
+      <v-card
+        class="card"
+        max-width="344"
+        
+      >
+      <v-img
+        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+        height="300px"
+      >
+      </v-img>
+
+      <v-card-title>
+       Cuenta profesional
+      </v-card-title>
+
+      <v-card-subtitle>
+       Profesionales cualificados
+      </v-card-subtitle>
+
+      <v-card-actions>
+        <v-btn
+          color="orange lighten-2"
+          text
+          @click="goRegisterPro"
         >
-            <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-            height="300px"
-            ></v-img>
+          Registrarse
+        </v-btn>
 
-            <v-card-title>
-            Cuenta profesional
-            </v-card-title>
+      </v-card-actions>
+      </v-card>
 
-            <v-card-subtitle>
-            Profesionales cualificados
-            </v-card-subtitle>
+      <v-card
+        class="card1"
+        max-width="344"
+      >
+      <v-img
+        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+        height="300px"
+      >
+      </v-img>
 
-            <v-card-actions>
-            <v-btn
-                color="orange lighten-2"
-                text
-                 @click="goRegisterPro"
-            >
-                Registrarse
-            </v-btn>
+      <v-card-title>
+        Cuenta usuario
+      </v-card-title>
 
-            </v-card-actions>
-        </v-card>
+      <v-card-subtitle>
+        Usuarios normales
+      </v-card-subtitle>
 
-
-        <v-card
-            class="card1"
-            max-width="344"
+      <v-card-actions>
+        <v-btn
+          color="orange lighten-2"
+          text
+          @click="goRegister"
         >
-            <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-            height="300px"
-            ></v-img>
+          Registrarse
+        </v-btn>
 
-            <v-card-title>
-            Cuenta usuario
-            </v-card-title>
-
-            <v-card-subtitle>
-            Usuarios normales
-            </v-card-subtitle>
-
-            <v-card-actions>
-            <v-btn
-                color="orange lighten-2"
-                text
-                @click="goRegister"
-            >
-                Registrarse
-            </v-btn>
-
-            </v-card-actions>
+      </v-card-actions>
 
             
-        </v-card>
+    </v-card>
     </div>
     
   </div>
@@ -106,11 +106,11 @@ export default {
   color: black;
   position: relative;
   text-align: center;
-  vertical-align: middle;
 }
 
 .contenido{
     display: flex;
+    position: relative;
     margin: 5%;
     margin-left: 30%;
     margin-right: 30%;
