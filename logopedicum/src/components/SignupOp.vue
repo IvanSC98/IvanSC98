@@ -26,6 +26,7 @@
             <v-btn
                 color="orange lighten-2"
                 text
+                 @click="goRegisterPro"
             >
                 Registrarse
             </v-btn>
@@ -82,6 +83,11 @@ export default {
         goRegister() {
           if (this.$route.name !== 'Signup') {
             this.$router.push({ name: 'Signup' })
+          }
+        },
+        goRegisterPro() {
+          if (this.$route.name !== 'SignupPro') {
+            this.$router.push({ name: 'SignupPro' })
           }
         },
     }

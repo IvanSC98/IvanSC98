@@ -4,7 +4,7 @@
 
     <v-card class="contenido">
 
-      <p class="title1">Cuenta Lite</p>
+      <p class="title1">Cuenta Pro</p>
 
     <v-form
       ref="form"

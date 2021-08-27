@@ -10,6 +10,7 @@ import Info from "../components/Info.vue";
 import Signin from "../components/Signin.vue";
 import Signup from "../components/Signup.vue";
 import SignupOp from "../components/SignupOp.vue";
+import SignupPro from "../components/SignupPro.vue";
 import Noticia from "../components/Noticia.vue";
 import Congreso from "../components/Congreso.vue";
 import Curso from "../components/Curso.vue";
@@ -61,6 +62,11 @@ const routes = [
     path: '/signupop',
     name: 'SignupOp',
     component: SignupOp
+  },
+  {
+    path: '/signuppro',
+    name: 'SignupPro',
+    component: SignupPro
   },
   {
     path: '/signin',
