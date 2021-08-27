@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <p class="title1">"Los límites de mi lenguaje son los límites de mi mundo"</p>
+    <p class="title1">"Existe un lenguaje más allá de las palabras"</p>
 
     <div class="linea1">
       <v-card
