@@ -22,6 +22,7 @@
             hide-details
             class="ma-2"
             label="type"
+            locale="es"
           ></v-select>
           <v-select
             v-model="weekday"

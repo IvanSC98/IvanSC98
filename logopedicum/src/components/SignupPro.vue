@@ -12,6 +12,21 @@
       lazy-validation
       class="formulario"
     > 
+
+      <v-text-field
+        v-model="especialidad"
+        :rules="especialidadRules"
+        label="Especialidad"
+        required
+      ></v-text-field>
+
+      <v-text-field
+        v-model="numero"
+        :rules="numeroRules"
+        label="Nº de colegiado"
+        required
+      ></v-text-field>
+
       <v-text-field
         v-model="name"
         :rules="nameRules"
@@ -26,13 +41,12 @@
         required
       ></v-text-field>
 
-      <v-menu
-        ref="menu"
-        v-model="menu"
-        :close-on-content-click="false"
-        transition="scale-transition"
-        offset-y
-        min-width="auto"
+      <v-dialog
+        ref="dialog"
+        v-model="modal"
+        :return-value.sync="date"
+        persistent
+        width="290px"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-text-field
@@ -46,12 +60,26 @@
         </template>
         <v-date-picker
           v-model="date"
-          :active-picker.sync="activePicker"
-          :max="(new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10)"
-          min="1950-01-01"
-          @change="save"
-        ></v-date-picker>
-      </v-menu>
+          scrollable
+          locale="es"
+        >
+          <v-spacer></v-spacer>
+          <v-btn
+            text
+            color="primary"
+            @click="modal = false"
+          >
+            Cancel
+          </v-btn>
+          <v-btn
+            text
+            color="primary"
+            @click="$refs.dialog.save(date)"
+          >
+            OK
+          </v-btn>
+        </v-date-picker>
+      </v-dialog>
 
       <v-text-field
         v-model="user"
@@ -80,7 +108,9 @@
         :rules="passwordRules"
         label="Contraseña"
         required
-        type="password"
+        :append-icon="value ? 'visibility' : 'visibility_off'"
+        @click:append="() => (value = !value)"
+        :type="value ? 'password' : 'text'"
       ></v-text-field>
 
       <v-text-field
@@ -88,7 +118,9 @@
         :rules="password1Rules"
         label="Repetir Contraseña"
         required
-        type="password"
+        :append-icon="value ? 'visibility' : 'visibility_off'"
+        @click:append="() => (value = !value)"
+        :type="value ? 'password' : 'text'"
       ></v-text-field>
 
       <v-checkbox
@@ -119,6 +151,7 @@ export default {
     
   },
   data: () => ({
+      value: String,
       valid: true,
       name: '',
       nameRules: [
@@ -155,7 +188,7 @@ export default {
   width: 80hw;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-bottom: 5%;
 }
 
@@ -170,8 +203,9 @@ export default {
   font-family: fantasy !important;
   font-size: 70px !important;
   color: black;
-  position: absolute;
-  left: 45%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
 }
 
 </style>
