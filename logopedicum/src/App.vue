@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-main>  
+      <VueScrollProgress></VueScrollProgress>
       <Header class="header"/>
       <router-view/>
       <Footer class="footer"/>
@@ -35,6 +36,16 @@ export default {
 
 .footer{
   padding-top: 10px;
+}
+/* play with some lines below */
+#progress-container-el {
+  /* background */
+  background-color: #f4f4f4 !important;
+}
+
+#progress-el {
+  /* progress bar */
+  background-color: red !important;
 }
   
 </style>
