@@ -205,8 +205,8 @@ export default {
 <style scoped>
 
 .title1{
-  font-family: fantasy !important;
-  font-size: 70px !important;
+  font-family: helvetica !important;
+  font-size: 50px !important;
   color: black;
   position: relative;
   text-align: center;
@@ -249,8 +249,7 @@ a {
 .calendario{
   display: inline-block;
   width: 30%;
-  margin-left: 5%;
-
+  margin-left: 5%
 }
 
 .contenedor{

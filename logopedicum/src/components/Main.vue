@@ -194,12 +194,14 @@ export default {
 }
 
 .title1{
-  font-family: fantasy !important;
-  font-size: 70px !important;
+  font-family: Helvetica !important;
+  font-size: 30px !important;
   color: black;
   position: relative;
   text-align: center;
   vertical-align: middle;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 </style>

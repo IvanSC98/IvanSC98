@@ -101,7 +101,7 @@ export default {
 
 
 .title1{
-  font-family: fantasy !important;
+  font-family: helvetica !important;
   font-size: 70px !important;
   color: black;
   position: relative;
