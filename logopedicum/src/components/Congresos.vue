@@ -4,72 +4,13 @@
     <p class="title1">Congresos</p>
 
     <div class="contenedor">
-      
-     <div class="calendario">
-        <v-sheet
-          tile
-          class="d-flex"
-        >
-          <v-btn
-            icon
-            class="ma-2"
-            @click="$refs.calendar.prev()"
-          >
-            <v-icon>mdi-ch   evron-left</v-icon>
-          </v-btn>
-          <v-select
-            v-model="type"
-            :items="types"
-            dense
-            outlined
-            hide-details
-            class="ma-2"
-            label="type"
-            locale="es"
-          ></v-select>
-          <v-select
-            v-model="weekday"
-            :items="weekdays"
-            dense
-            outlined
-            hide-details
-            label="weekdays"
-            class="ma-2"
-          ></v-select>
-          <v-spacer></v-spacer>
-          <v-btn
-            icon
-            class="ma-2"
-            @click="$refs.calendar.next()"
-          >
-            <v-icon>mdi-chevron-right</v-icon>
-          </v-btn>
-        </v-sheet>
-        <v-sheet >
-          <v-calendar
-            ref="calendar"
-            v-model="value"
-            :weekdays="weekday"
-            :type="type"
-            :events="events"
-            
-            :event-overlap-threshold="30"
-            :event-color="getEventColor"
-            @change="getEvents"
-          ></v-calendar>
-        </v-sheet>
-        </div>
-      
-      
       <v-card
         class="vcard"
       >
-
         <v-toolbar
           color="teal"
           dark
         >
-
           <v-toolbar-title>Últimos congresos</v-toolbar-title>
 
           <v-spacer></v-spacer>
@@ -127,6 +68,61 @@
           </v-row>
         </v-container>
       </v-card>
+
+           <div class="calendario">
+        <v-sheet
+          tile
+          class="d-flex"
+        >
+          <v-btn
+            icon
+            class="ma-2"
+            @click="$refs.calendar.prev()"
+          >
+            <v-icon>mdi-ch   evron-left</v-icon>
+          </v-btn>
+          <v-select
+            v-model="type"
+            :items="types"
+            dense
+            outlined
+            hide-details
+            class="ma-2"
+            label="type"
+            locale="es"
+          ></v-select>
+          <v-select
+            v-model="weekday"
+            :items="weekdays"
+            dense
+            outlined
+            hide-details
+            label="weekdays"
+            class="ma-2"
+          ></v-select>
+          <v-spacer></v-spacer>
+          <v-btn
+            icon
+            class="ma-2"
+            @click="$refs.calendar.next()"
+          >
+            <v-icon>mdi-chevron-right</v-icon>
+          </v-btn>
+        </v-sheet>
+        <v-sheet >
+          <v-calendar
+            ref="calendar"
+            v-model="value"
+            :weekdays="weekday"
+            :type="type"
+            :events="events"
+            
+            :event-overlap-threshold="30"
+            :event-color="getEventColor"
+            @change="getEvents"
+          ></v-calendar>
+        </v-sheet>
+      </div>
       
 
     </div>
@@ -247,12 +243,14 @@ a {
 .vcard{
   display: inline-block;
   width: 55%;
-  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .calendario{
   display: inline-block;
-  width: 40%;
+  width: 30%;
+  margin-left: 5%;
+
 }
 
 .contenedor{

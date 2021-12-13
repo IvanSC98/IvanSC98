@@ -2,7 +2,7 @@
   <div class="signin">
     <p class="title1">Iniciar Sesión</p>
     <v-card class="contenido">
-      <v-toolbar dark color="primary">
+      <v-toolbar dark color="teal">
         <v-toolbar-title>Login</v-toolbar-title>
       </v-toolbar>
       <v-card-text>
@@ -23,7 +23,9 @@
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="primary">Iniciar Sesion</v-btn>
+        <v-btn color="teal">
+          Iniciar Sesion
+        </v-btn>
       </v-card-actions>
     </v-card>
   </div>
@@ -49,7 +51,7 @@ export default {
   margin-bottom: 10%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 .title1{
