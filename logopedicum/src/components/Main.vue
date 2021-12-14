@@ -21,7 +21,7 @@
       
         
         <v-card-actions>
-          <v-btn class="but1" color=success @click="goCongresos">IR YA</v-btn>
+          <v-btn class="but1" color=teal @click="goCongresos" style="color:white">IR YA</v-btn>
         </v-card-actions>
         
       </v-card>
@@ -44,7 +44,7 @@
       
         
         <v-card-actions>
-          <v-btn color=success @click="goCursos">IR YA</v-btn>
+          <v-btn color=teal @click="goCursos" style="color:white">IR YA</v-btn>
         </v-card-actions>
         
       </v-card>
@@ -70,7 +70,7 @@
       
         
         <v-card-actions>
-          <v-btn color=success @click="goMateriales">IR YA</v-btn>
+          <v-btn color=teal @click="goMateriales" style="color:white">IR YA</v-btn>
         </v-card-actions>
         
       </v-card>
@@ -93,7 +93,7 @@
       
         
         <v-card-actions>
-          <v-btn color=success @click="goNoticias">IR YA</v-btn>
+          <v-btn color=teal @click="goNoticias" style="color:white">IR YA</v-btn>
         </v-card-actions>
         
       </v-card>
@@ -120,7 +120,7 @@
       
         
         <v-card-actions>
-          <v-btn color=success @click="goEstudios">IR YA</v-btn>
+          <v-btn color=teal @click="goEstudios" style="color:white">IR YA</v-btn>
         </v-card-actions>
         
       </v-card>

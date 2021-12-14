@@ -2,7 +2,7 @@
   <div class="materiales">
     <p class="title1">Materiales</p>
     <div class="contenedor">
-      <div class="filtros">
+      <div class="filtros" style="margin-top: 2em;">
         <v-card class="filtros"
         >
           <v-toolbar
@@ -10,7 +10,7 @@
             color="teal"
             dark
           >
-            <v-toolbar-title>Filtros</v-toolbar-title>
+           <v-toolbar-title>Filtros</v-toolbar-title>
           </v-toolbar>
           <v-card-text>
             <h2 class="text-h6 mb-2">
@@ -113,29 +113,29 @@
       </div>
       <div class="materiales1">
         <div class="fila">
-        <div class="card">
-          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+        <div class="card" >
+          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100% ; border-top-right-radius: 10px; border-top-left-radius: 10px;">
           <h1>Pesas labiales</h1>
           <p class="price">19.99€</p>
           <p>Set de 3 pesas labiales</p>
           <button>Añadir al carrito</button>
         </div>
         <div class="card">
-          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
           <h1>Pesas labiales</h1>
           <p class="price">19.99€</p>
           <p>Set de 3 pesas labiales</p>
           <button>Añadir al carrito</button>
         </div>
         <div class="card">
-          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
           <h1>Pesas labiales</h1>
           <p class="price">19.99€</p>
           <p>Set de 3 pesas labiales</p>
           <button>Añadir al carrito</button>
         </div>
         <div class="card">
-          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
           <h1>Pesas labiales</h1>
           <p class="price">19.99€</p>
           <p>Set de 3 pesas labiales</p>
@@ -144,28 +144,28 @@
         </div>
         <div class="fila1">
         <div class="card">
-          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
           <h1>Pesas labiales</h1>
           <p class="price">19.99€</p>
           <p>Set de 3 pesas labiales</p>
           <button>Añadir al carrito</button>
         </div>
         <div class="card">
-          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
           <h1>Pesas labiales</h1>
           <p class="price">19.99€</p>
           <p>Set de 3 pesas labiales</p>
           <button>Añadir al carrito</button>
         </div>
         <div class="card">
-          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
           <h1>Pesas labiales</h1>
           <p class="price">19.99€</p>
           <p>Set de 3 pesas labiales</p>
           <button>Añadir al carrito</button>
         </div>
         <div class="card">
-          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%">
+          <img src="https://logopedicum.com/wp-content/uploads/2014/11/pesas-labiales.png" alt="Pesas labiales" style="width:100%; border-top-right-radius: 10px; border-top-left-radius: 10px;">
           <h1>Pesas labiales</h1>
           <p class="price">19.99€</p>
           <p>Set de 3 pesas labiales</p>
@@ -191,12 +191,14 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .title1{
-  font-family: helvetica !important;
-  font-size: 50px !important;
+  font-family: Helvetica !important;
+  font-size: 30px !important;
   color: black;
   position: relative;
   text-align: center;
   vertical-align: middle;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -205,11 +207,12 @@
   font-family: helvetica;
   display: inline-block;
   margin: 2%;
+  border-radius: 10px;
 }
 
 .price {
   color: grey;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .card button {
@@ -222,7 +225,10 @@
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
+
 
 .card button:hover {
   opacity: 0.7;
@@ -230,19 +236,20 @@
 .contenedor{
   display: flex;
   margin-right: 5%;
-  margin-left: 1%;
-  margin-top: 3%;
-  text-align: center;
+  margin-top: 1em;
+  padding-inline: 12em;
 }
 
 .filtros{
   display: inline-block;
-  width: 65%;
+  width: 55%;
+  left: 0px;
 }
 
 .materiales1{
   display: inline-block;
   width: 150%;
+  text-align: center; 
 }
 
 .fila{

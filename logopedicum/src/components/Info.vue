@@ -1,6 +1,6 @@
 <template>
   <div class="info1">
-    <v-card class="card1">
+    <div class="card1">
     <p class="title1">¿Quiénes somos?</p>
     <div class="description">
       <p>GIHS Logopedic es una plataforma digital destinada a la creación de una comunidad tanto de profesionales como familias en la cual 
@@ -15,7 +15,7 @@
       <p>Además queremos que todo el mundo pueda trabajar de manera óptima con los materiales necesarios para ello, por eso contamos
       con una tienda en la cual encontrarás un gran repertorio de materiales e instrumental a un buen precio.</p>
     </div>
-    </v-card>
+    </div>
     <div class="info2">
     <p class="title2">Sobre nosotros</p>
       <div class="description2">
